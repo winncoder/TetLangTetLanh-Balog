@@ -1,0 +1,41 @@
+/* Reset margin và padding mặc định của trang */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;    /* Căn giữa theo chiều dọc */
+    height: 100vh;          /* Chiều cao 100% của màn hình */
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Style cho poster */
+.poster {
+    width: 80%;             /* Độ rộng của poster */
+    max-width: 600px;       /* Độ rộng tối đa */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    text-align: center;    /* Căn giữa nội dung trong poster */
+    border-radius: 10px;   /* Góc bo tròn */
+}
+
+/* Style cho hình ảnh trong poster */
+.poster img {
+    width: 50%;           /* Hình ảnh chiếm toàn bộ chiều rộng poster */
+    border-radius: 10px;   /* Góc bo tròn cho hình ảnh */
+}
+
+/* Style cho tiêu đề của poster */
+.poster h1 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style cho nội dung văn bản của poster */
+.poster p {
+    font-size: 16px;
+    color: #555;
+}
