@@ -30,11 +30,54 @@
             width: 80% !important;
         }
 
+        h2 {
+            font-size: 24px;
+            color: #a45e3b; /* Tùy chỉnh màu theo phong cách Tết */
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .brand-gallery {
+            display: flex;
+            justify-content: center; /* Canh giữa */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            gap: 20px; /* Khoảng cách giữa các hình */
+            margin-top: 20px; /* Thêm khoảng cách phía trên */
+        }
+
+        .brand-gallery img {
+            width: 45px !important; /* Điều chỉnh kích thước hình ảnh nhỏ lại */
+            height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+            border-radius: 0px; /* Bo góc hình ảnh */
+        }
+
+        .social-icons a img {
+            width: 35px; /* Kích thước icon */
+            margin: 0 10px;
+            transition: transform 0.2s; /* Hiệu ứng khi hover */
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.1); /* Phóng to nhẹ khi hover */
+        }
+
+        .text-gray {
+            color: gray;
+            font-size: 12px;
+        }
 
         /* Media Query: Đối với màn hình lớn hơn 768px (máy tính bảng và máy tính để bàn) */
         @media (min-width: 768px) {
             .gallery img {
-                width: 60%; /* Giảm kích thước ảnh xuống 60% cho màn hình lớn */
+                width: 50%; /* Giảm kích thước ảnh xuống 60% cho màn hình lớn */
+            }
+            .small-img {
+                width: 30% !important;
             }
         }
     </style>
@@ -62,6 +105,36 @@
             <div class="col-6 col-sm-4 col-md-3">
                 <img src="https://res.cloudinary.com/dnjkwuc7p/image/upload/v1737475972/Balog/map2.png" alt="Image 6" class="img-fluid">
             </div>
+            <div class="container my-4 text-center">
+                <!-- Tiêu đề -->
+                <h2 class="mt-4">HẸN GẶP LẠI BẠN TẠI TẾT LÀNG TẾT LÀNH 💃</h2>
+                
+                <!-- Logo 2 brand -->
+                <div class="brand-gallery">
+                    <img src="https://res.cloudinary.com/dnjkwuc7p/image/upload/v1737996108/Balog/balog-logo-2.png" 
+                         alt="Balog Logo" class="img-fluid">
+                    <img src="https://res.cloudinary.com/dnjkwuc7p/image/upload/v1737996109/Balog/tomsara-logo-2.png" 
+                         alt="Toomsara Logo" class="img-fluid">
+                </div>
+                
+                <!-- Contact Section -->
+                <div class="contact mt-4">
+                    <p class="mb-2">
+                        <strong>Balog Media Team</strong><br>
+                        <a href="mailto:Solong.club@gmail.com" class="text-gray">Solong.club@gmail.com</a> | 
+                        <a href="Phone number" target="_blank" class="text-gray">0868 006 697</a>
+                    </p>                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Balogmediadanang" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
